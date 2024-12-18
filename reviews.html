@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Product Reviews - Product Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Product Reviews</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="reviews.html">Product Reviews</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Select a Category</h2>
+            <select id="category" onchange="location = this.value;">
+                <option value="#">--Select a Category--</option>
+                <option value="#smartphones">Smartphones</option>
+                <option value="#laptops">Laptops</option>
+                <option value="#tablets">Tablets</option>
+                <option value="#accessories">Accessories</option>
+            </select>
+        </section>
+        <section id="smartphones">
+            <h2>Smartphones</h2>
+            <ul>
+                <li><a href="review-details.html">iPhone 16</a><br> Apple delivers another standout device with its sleek design, powerful A17 chip, and top-notch camera system. A must-have for iOS enthusiasts.</li>
+                <li><a href="review-details.html">Samsung Galaxy S24</a><br>Boasting an impressive display, long-lasting battery, and versatile camera, this Android flagship is a powerhouse for productivity and entertainment.</li>
+                <li><a href="review-details.html">OnePlus 9</a><br> A budget-friendly option with speedy performance and a clean UI. Great value for users seeking premium features without breaking the bank.</li>
+            </ul>
+        </section>
+        <section id="laptops">
+            <h2>Laptops</h2>
+            <ul>
+                <li><a href="review-details.html">MacBook Pro</a><br>Apple's MacBook Pro sets the bar for performance, featuring the M3 chip and a stunning Retina display. Ideal for professionals and creatives.</li>
+                <li><a href="review-details.html">Dell XPS 13</a><br> With its ultra-slim design, vibrant screen, and excellent performance, this laptop remains a top choice for portability and productivity.</li>
+                <li><a href="review-details.html">HP Victus</a><br>A solid gaming laptop with reliable performance and a competitive price. Perfect for casual gamers and students alike.</li>
+            </ul>
+        </section>
+        <section id="tablets">
+            <h2>Tablets</h2>
+            <ul>
+                <li><a href="review-details.html">iPad Pro</a><br>A powerful device for productivity and entertainment, with advanced features like the M2 chip and a Liquid Retina display.</li>
+                <li><a href="review-details.html">Samsung Galaxy Tab</a><br>Offers a stunning AMOLED display and multitasking capabilities, making it an excellent Android alternative to the iPad.</li>
+                <li><a href="review-details.html">Microsoft Surface Pro</a><br>Combines the functionality of a laptop and tablet, perfect for professionals on the go with its versatile design and Windows OS.</li>
+            </ul>
+        </section>
+        <section id="accessories">
+            <h2>Accessories</h2>
+            <ul>
+                <li><a href="review-details.html">AirPods Pro</a><br>Exceptional noise cancellation and immersive sound quality, ideal for music lovers and frequent travelers.</li>
+                <li><a href="review-details.html">Logitech Mouse</a><br> Ergonomically designed with precision tracking, making it a reliable accessory for work and gaming.</li>
+                <li><a href="review-details.html">Anker Charger</a><br> Compact and efficient, this charger ensures fast and reliable power delivery for all your devices.</li>
+            </ul>
+        </section>
+        <section id="review-form">
+            <h2>Write a Review</h2>
+            <form>
+                <label for="product">Product:</label><br>
+                <input type="text" id="product" name="product" required><br>
+                <label for="review">Your Review:</label><br>
+                <textarea id="review" name="review" rows="4" required></textarea><br>
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tech Product Reviews. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

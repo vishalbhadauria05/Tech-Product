@@ -1,0 +1,111 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #444040, #ebf3ff, #000000);
+    color: #000000;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #44444481, #22222200);
+    color: #000000;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+    background-image: url("https://media.licdn.com/dms/image/v2/D4E12AQESJNJ_UqRsow/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1677238733511?e=2147483647&v=beta&t=0hFQNfMjXEYCkhtL7M081ZlDAULmWm2rRpIBCJxJywU");
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    padding: 0.5em 0;
+    box-shadow: 0 2px 4px rgb(148, 142, 142);
+    border-radius: 50px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+    padding: 0.5em 0.1em;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #555;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+    background-color: #eddbdb;
+    background-size: cover;
+    margin: 2em auto;
+    width: 80%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #eaeaea;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul li:hover {
+    background-color: #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    margin: 2em 0;
+}
+
+button {
+    background: linear-gradient(to right, #333, #555);
+    color: #fff;
+    border: none;
+    padding: 0.75em 1.5em;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #fcfbfb;
+    background: linear-gradient(to right, #555, #444);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background: linear-gradient(135deg, #222, #000);
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}

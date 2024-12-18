@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Product Reviews - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Form Styling */
+form {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 1rem auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+button {
+    background: #0078d7;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background: #005bb5;
+}
+
+/* Error Messages */
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: -0.8rem;
+    margin-bottom: 1rem;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Tech Product Reviews</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="reviews.html">Product Reviews</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Featured Reviews</h2>
+            <p>Check out our latest reviews on the newest tech products.</p>
+        </section>
+        <section>
+            <h2>Sign In</h2>
+            <form id="myForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <span id="nameError" class="error"></span><br><br>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <span id="emailError" class="error"></span><br><br>
+            
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <span id="passwordError" class="error"></span><br><br>
+            
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age">
+                <span id="ageError" class="error"></span><br><br>
+            
+                <button type="button" onclick="validateForm()">Submit</button>
+              </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tech Product Reviews. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
